@@ -14,7 +14,7 @@
         
         .hero {
             background: linear-gradient(135deg, #8B4513 0%, #654321 100%);
-            min-height: 70vh;
+            min-height: 50vh;
             display: flex;
             align-items: center;
         }
@@ -80,24 +80,36 @@
         
         @media (max-width: 768px) {
             .hero {
-                padding: 4rem 0;
+                padding: 3rem 0;
             }
             
             .hero .display-1 {
-                font-size: 2.8rem !important;
+                font-size: 2.5rem !important;
+                line-height: 1.1;
+                margin-bottom: 1rem;
             }
             
             .hero .display-5 {
-                font-size: 2rem;
+                font-size: 1.6rem;
+                line-height: 1.2;
+                margin-bottom: 1.5rem;
             }
             
             .hero .lead {
-                font-size: 1rem;
+                font-size: 0.95rem;
+                line-height: 1.5;
+                padding: 0 1rem;
             }
             
             .btn-lg {
                 padding: 0.75rem 1.5rem;
                 font-size: 1rem;
+                margin-top: 0.5rem;
+            }
+            
+            .card-text {
+                font-size: 0.9rem;
+                line-height: 1.5;
             }
         }
     </style>
@@ -106,11 +118,11 @@
 
     <main>
         <!-- ヒーローセクション -->
-        <section class="hero text-white text-center py-5">
+        <section class="hero text-white text-center py-4">
             <div class="container">
                 <h1 class="display-1 fw-bold mb-2" style="font-size: 4rem; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);">めしかふぇ えん</h1>
                 <h2 class="display-5 fw-bold mb-4" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);">やさしい味の手作りお弁当</h2>
-                <p class="lead mb-4">季節の食材を使って、やさしい味付けで丁寧に作ったお弁当です。<br />高知市役所のお隣で、テイクアウトでご提供しています。</p>
+                <p class="lead mb-4">季節の食材を使った、やさしい味付けで丁寧に作ったお弁当です。<br />高知市役所のお隣でテイクアウトでご提供しています。</p>
             </div>
         </section>
 
@@ -132,7 +144,7 @@
                                         <div class="card-body h-100 d-flex flex-column justify-content-center">
                                             <h3 class="card-title text-success mb-3">日替わりお弁当</h3>
                                             <h2 class="text-success mb-3">550円</h2>
-                                            <p class="card-text">季節の食材を使った、やさしい味付けの日替わりメニューです。</p>
+                                            <p class="card-text">季節の食材を使った、<br class="d-sm-none" />やさしい味付けの<br class="d-sm-none" />日替わりメニューです。</p>
                                             <p class="text-success mb-3"><strong>おかずのみ 450円</strong></p>
                                         </div>
                                     </div>
