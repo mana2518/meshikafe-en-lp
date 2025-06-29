@@ -14,7 +14,7 @@
         
         .hero {
             background: linear-gradient(135deg, #8B4513 0%, #654321 100%);
-            min-height: 50vh;
+            min-height: 35vh;
             display: flex;
             align-items: center;
         }
@@ -80,7 +80,8 @@
         
         @media (max-width: 768px) {
             .hero {
-                padding: 3rem 0;
+                padding: 2rem 0;
+                min-height: 25vh;
             }
             
             .hero .display-1 {
@@ -118,11 +119,11 @@
 
     <main>
         <!-- ヒーローセクション -->
-        <section class="hero text-white text-center py-4">
+        <section class="hero text-white text-center py-3">
             <div class="container">
                 <h1 class="display-1 fw-bold mb-2" style="font-size: 4rem; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);">めしかふぇ えん</h1>
                 <h2 class="display-5 fw-bold mb-4" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);">やさしい味の手作りお弁当</h2>
-                <p class="lead mb-4">季節の食材を使った、やさしい味付けで丁寧に作ったお弁当です。<br />高知市役所のお隣でテイクアウトでご提供しています。</p>
+                <p class="lead mb-4">季節の食材を使った、<br class="d-none d-sm-block" />やさしい味付けで<br class="d-sm-none" />丁寧に作ったお弁当です。<br />高知市役所のお隣で<br class="d-sm-none" />テイクアウトでご提供しています。</p>
             </div>
         </section>
 
